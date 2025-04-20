@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.appContainer {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f0f0f, #001f3f); /* Cambiá este color por el que quieras */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }

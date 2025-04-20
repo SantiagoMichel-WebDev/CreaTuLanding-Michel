@@ -1,55 +1,80 @@
 .navbar {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  
-  .navbar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #6495ED;
-    margin-bottom: 1rem;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-left: 1.5rem;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #6495ED;
-  }
-  
-  .cart-widget-container {
-    position: absolute;
-    top: 3rem;
-    right: 2rem;
-  }
-  
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar-logoIMG {
+  width: 8em;
+  height: auto;
+  animation: spin 8s linear infinite; /* animación agregada */
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6495ED;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6495ED;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: #6495ED;
+}
+
+.cart-widget-container {
+  margin-left: auto;
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.navbar-logoIMG {
+  width: 8em;
+  transition: transform 1s ease;
+}
+
+.navbar-logoIMG:hover {
+  transform: rotate(360deg);
+}
+
